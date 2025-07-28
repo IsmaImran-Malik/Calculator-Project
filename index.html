@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="calculator d-grid text-center">
+            <div class="grid-items item-1 rounded-top-3 px-2">
+                <form action="">
+                    <input class="m-0 p-2" type="text" name="Calc-box" id="Calc-box">
+                </form>
+            </div>
+            <div class="grid-items item-2">
+                <button class="btn"  onclick="" id="sum">+</button>
+            </div>
+            <div class="grid-items item-3">
+                <button class="btn"  onclick="" id="subtract">-</button>
+            </div>
+            <div class="grid-items item-4">
+                <button class="btn"  onclick="" id="multiply">*</button>
+            </div>
+            <div class="grid-items item-5">
+                <button class="btn"  onclick="" id="divide">&#247</button> 
+            </div>
+            <div class="grid-items item-6">
+                <button onclick="" id="9">9</button>
+            </div>
+            <div class="grid-items item-7">
+                <button onclick="" id="8">8</button>
+            </div>
+            <div class="grid-items item-8">
+                <button onclick="" id="7">7</button>
+            </div>
+            <div class="grid-items item-9">
+                <button  onclick="" id="equal">=</button>
+            </div>
+            <div class="grid-items item-10">
+                <button onclick="" id="6">6</button>
+            </div>
+            <div class="grid-items item-11">
+                <button onclick="" id="5">5</button>
+            </div>
+            <div class="grid-items item-12">
+                <button  onclick="" id="4">4</button>
+            </div>
+            <div class="grid-items item-13">
+                <button onclick="" id="3">3</button>
+            </div>
+            <div class="grid-items item-14">
+                <button onclick="" id="2">2</button>
+            </div>
+            <div class="grid-items item-15">
+                <button onclick="" id="1">1</button>
+            </div>
+            <div class="grid-items item-16">
+                <button onclick="" id="0">0</button>
+            </div>
+            <div class="grid-items item-17">
+                <button onclick="" id="decimal">.</button>
+            </div>
+            <div class="grid-items item-18">
+                <button onclick="" id="reset">C</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="calculator d-flex flex-column align-items-center justify-content-center">
+            <!-- input feild -->
+        <div class=" text-box-container row d-flex align-content-center justify-content-center py-3">
+            <div class="col">
+                <form action="">
+                    <input class="input-feild" type="text" name="Calc-box" id="Calc-box">
+                </form>
+            </div>
+        </div>
+        <!-- operators  -->
+        <div class="operators row m-0">
+                <button onclick="getValue('+')" class="sum col">+</button>
+                <button onclick="getValue('-')" class="subtract col">-</button>
+                <button onclick="getValue('*')" class="multiply col">*</button>
+                <button onclick="getValue('/')" class="divide col">&#247</button>
+            
+        </div>
+        <div class="numbers row m-0 p-0">
+            <div class="col-9 p-0">
+                <div class="row m-0 p-0">
+                        <button onclick="getValue(7)" class="col" id="7">7</button>
+                        <button onclick="getValue(8)" class="col" id="8">8</button>
+                        <button onclick="getValue(9)" class="col" id="9">9</button>
+                    
+                </div>
+                <div class="row m-0 p-0">
+                   
+                        <button onclick="getValue(4)" class="col" id="4">4</button>
+                        <button onclick="getValue(5)" class="col" id="5">5</button>
+                        <button onclick="getValue(6)" class="col" id="6">6</button>
+            
+                </div>
+                <div class="row m-0 p-0">
+                    
+                        <button onclick="getValue(1)" class="col" id="1">1</button>
+                        <button onclick="getValue(2)" class="col" id="2">2</button>
+                        <button onclick="getValue(3)" class="col" id="3">3</button>
+                    
+                </div>
+                <div class="row m-0 p-0">
+                        <button onclick="getValue(0)" class="col-4" id="0">0</button>
+                        <button onclick="getValue('.')" class="col-4" id="decimal">.</button>
+                        <button onclick="reset()" class="col-4" id="reset">C</button>
+                </div>
+            </div>
+            <div class="col-3 p-0 d-flex">
+                <button onclick="getResult()" class="align-self-stretch" id="result">=</button>
+            </div>
+        </div>
+        </div>
+     </div>   
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
